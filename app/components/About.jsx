@@ -90,7 +90,7 @@ const About = ({ isDarkMode }) => {
           <div className="flex-1 max-w-3xl">
             
             {/* Description */}
-            <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center lg:text-left">
+            <p className="mb-12 text-md md:text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center lg:text-left">
               I build modern and scalable applications with a strong focus on clean architecture, performance, and reliability. I work with Node.js, JavaScript, RESTful APIs, databases, and backend system design—turning ideas into production-ready solutions with robust, scalable backends.
             </p>
 

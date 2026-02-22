@@ -29,7 +29,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
 
-      <nav 
+      <nav
         className={`w-full fixed px-5 lg:px-[7%] py-4 flex
         items-center justify-between mt-0 z-50 ${
           isScroll
@@ -37,7 +37,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : ""
         }`}
       >
-        <h2 className="text-3xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mr-36">
+        <h2
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-3xl sm:text-3xl font-extrabold tracking-tight cursor-pointer 
+             text-gray-900 dark:text-white select-none mr-36"
+        >
           Sahil<span className="text-[#ff2d55]">.</span>
         </h2>
 
@@ -141,11 +145,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Services
             </a>
           </li>
-           <li>
+          <li>
             <a className="font-Ovo" href="#skills">
               Skills
             </a>
-            </li>
+          </li>
           <li>
             <a className="font-Ovo" href="#experience" onClick={closeMenu}>
               Experience

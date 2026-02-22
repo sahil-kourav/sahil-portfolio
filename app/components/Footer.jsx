@@ -64,11 +64,11 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative mt-6 border-t border-gray-200 dark:border-gray-800">
+    <footer className="relative px-5 lg:px-[7%] mt-6 border-t border-gray-200 dark:border-gray-800">
       {/* Decorative Gradient */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50" />
 
-      <div className="max-w-6xl mx-auto px-1 pt-10 pb-8">
+      <div className="mx-auto px-1 pt-10 pb-8">
         {/* Top */}
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -81,7 +81,10 @@ const Footer = () => {
           </p>
 
           {/* Socials */}
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
+            <h2 className="">
+              Follow me!
+            </h2>
             <motion.div
               variants={itemVariants}
               className="flex justify-center lg:justify-start gap-5 text-2xl pt-2"
@@ -104,7 +107,46 @@ const Footer = () => {
                 </motion.a>
               ))}
             </motion.div>
-          </div>
+          </div> */}
+
+
+          <div className="flex items-center gap-4">
+
+  {/* Label */}
+  <span className="text-md font-medium tracking-wide text-gray-600 dark:text-gray-400">
+    Follow Me
+  </span>
+  <span className="w-5 h-px mt-1 bg-gray-800 dark:bg-gray-700" />
+
+  {/* Divider Line */}
+
+  {/* Social Icons */}
+  <div className="flex items-center gap-4 text-lg">
+    <motion.div
+              variants={itemVariants}
+              className="flex justify-center gap-5 text-xl pt-1"
+            >
+              {socials.map(({ Icon, label, href }) => (
+                <motion.a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  variants={glowVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="text-gray-500 dark:text-gray-400 transition-colors
+                             hover:text-black dark:hover:text-white"
+                >
+                  <Icon />
+                </motion.a>
+              ))}
+            </motion.div>
+  </div>
+
+</div>
         </div>
 
         {/* Divider */}

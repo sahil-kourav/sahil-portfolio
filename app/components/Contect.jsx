@@ -10,9 +10,6 @@ import {
   Loader2,
 } from "lucide-react";
 
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
-
 const Contact = () => {
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,31 +34,6 @@ const Contact = () => {
       value: "Indore, India",
       link: null
     }
-  ];
-
-
-  const socialLinks = [
-    {
-      icon: FaXTwitter,
-      label: "X (Twitter)",
-      href: "https://x.com/sahilkourav_",
-    },
-    {
-      icon: FaLinkedin,
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/sahilkourav",
-    },
-    { 
-      icon: FaGithub, 
-      label: "GitHub", 
-      href: "https://github.com/sahil-kourav" 
-  
-    },
-    { 
-      icon: FaInstagram, 
-      label: "Instagram", 
-      href: "https://instagram.com/sahilkourav_" 
-    },
   ];
 
 
@@ -143,7 +115,7 @@ const Contact = () => {
           >
             {/* Contact Information Cards */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-Ovo font-semibold text-gray-800 dark:text-white mb-6">
+              <h3 className="text-xl font-Ovo text-gray-800 dark:text-white mb-6">
                 Contact Information
               </h3>
               
@@ -187,34 +159,7 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Social Links */}
-            <div>
-              <h3 className="text-2xl font-Ovo font-semibold text-gray-800 dark:text-white mb-6">
-                Follow Me
-              </h3>
-              
-              <div className="flex flex-wrap gap-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-xl bg-white dark:bg-gray-900/50 
-                             border border-gray-400 dark:border-gray-700
-                             hover:border-gray-500 dark:hover:border-gray-600
-                             flex items-center justify-center
-                             hover:bg-gradient-to-br hover:from-blue-600 hover:to-purple-600
-                             hover:text-white transition-all duration-300
-                             group"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-white" />
-                  </a>
-                ))}
-              </div>
-            </div>
-
+  
             {/* Additional Info Box */}
             <div
              className="p-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 

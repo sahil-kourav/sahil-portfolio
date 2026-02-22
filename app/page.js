@@ -38,9 +38,9 @@ export default function Home() {
   }, [isDarkMode]);
   return (
     <>
-      {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
+      {/* {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
 
-      {introDone && (
+      {introDone && ( */}
         <div>
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <Header isDarkMode={isDarkMode} />
@@ -52,7 +52,7 @@ export default function Home() {
           <Contact isDarkMode={isDarkMode} />
           <Footer isDarkMode={isDarkMode} />
         </div>
-      )} 
+      {/* )}  */}
     </>
   );
 }
