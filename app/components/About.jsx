@@ -61,7 +61,7 @@ const About = ({ isDarkMode }) => {
             Introduction
           </p>
           
-          <h2 className="text-4xl md:text-5xl font-bold font-Ovo text-gray-900 dark:text-white">
+          <h2 className="text-5xl md:text-5xl font-bold font-Ovo text-gray-900 dark:text-white">
             About Me
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full" />

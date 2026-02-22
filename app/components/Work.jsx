@@ -23,8 +23,8 @@ const Work = ({ isDarkMode }) => {
           <h4 className="mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400 font-medium">
             My Projects
           </h4>
-          <h2 className="text-5xl font-Ovo font-semibold text-gray-800 dark:text-white mb-6">
-            My Latest Work
+          <h2 className="text-5xl font-Ovo font-semibold text-gray-800 dark:text-white mb-4">
+              Featured Work
           </h2>
           <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300 font-Ovo leading-relaxed">
             A selection of projects showcasing my full-stack and front-end

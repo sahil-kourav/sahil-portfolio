@@ -269,7 +269,7 @@ const Header = () => {
   }, [text, isDeleting, roleIndex]);
 
   return (
-    <section className="relative w-full py-20 md:py-24 px-[5%] lg:px-[10%] overflow-hidden">
+    <section className="relative w-full py-24 md:py-24 px-[5%] lg:px-[10%] overflow-hidden">
       
       {/* Background Blobs */}
       <div className="absolute inset-0 -z-10">
@@ -277,7 +277,7 @@ const Header = () => {
         <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-2xl mx-auto text-center space-y-8">
+      <div className="max-w-2xl mt-5 mx-auto text-center space-y-8">
         
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700">
