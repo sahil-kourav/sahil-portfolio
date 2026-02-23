@@ -80,73 +80,39 @@ const Footer = () => {
             thoughtful architecture.
           </p>
 
-          {/* Socials */}
-          {/* <div className="flex gap-3">
-            <h2 className="">
-              Follow me!
-            </h2>
-            <motion.div
-              variants={itemVariants}
-              className="flex justify-center lg:justify-start gap-5 text-2xl pt-2"
-            >
-              {socials.map(({ Icon, label, href }) => (
-                <motion.a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  variants={glowVariants}
-                  initial="initial"
-                  whileHover="hover"
-                  whileTap="tap"
-                  className="text-gray-500 dark:text-gray-400 transition-colors
-                             hover:text-black dark:hover:text-white"
-                >
-                  <Icon />
-                </motion.a>
-              ))}
-            </motion.div>
-          </div> */}
-
-
           <div className="flex items-center gap-4">
+            {/* Label */}
+            <span className="text-md font-medium tracking-wide text-gray-600 dark:text-gray-400">
+              Follow Me
+            </span>
+            <span className="w-5 h-px mt-1 bg-gray-800 dark:bg-gray-700" />
 
-  {/* Label */}
-  <span className="text-md font-medium tracking-wide text-gray-600 dark:text-gray-400">
-    Follow Me
-  </span>
-  <span className="w-5 h-px mt-1 bg-gray-800 dark:bg-gray-700" />
 
-  {/* Divider Line */}
-
-  {/* Social Icons */}
-  <div className="flex items-center gap-4 text-lg">
-    <motion.div
-              variants={itemVariants}
-              className="flex justify-center gap-5 text-xl pt-1"
-            >
-              {socials.map(({ Icon, label, href }) => (
-                <motion.a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  variants={glowVariants}
-                  initial="initial"
-                  whileHover="hover"
-                  whileTap="tap"
-                  className="text-gray-500 dark:text-gray-400 transition-colors
+            <div className="flex items-center gap-4 text-lg">
+              <motion.div
+                variants={itemVariants}
+                className="flex justify-center gap-5 text-xl pt-1"
+              >
+                {socials.map(({ Icon, label, href }) => (
+                  <motion.a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    variants={glowVariants}
+                    initial="initial"
+                    whileHover="hover"
+                    whileTap="tap"
+                    className="text-gray-500 dark:text-gray-400 transition-colors
                              hover:text-black dark:hover:text-white"
-                >
-                  <Icon />
-                </motion.a>
-              ))}
-            </motion.div>
-  </div>
-
-</div>
+                  >
+                    <Icon />
+                  </motion.a>
+                ))}
+              </motion.div>
+            </div>
+          </div>
         </div>
 
         {/* Divider */}

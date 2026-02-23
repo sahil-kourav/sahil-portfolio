@@ -39,7 +39,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       >
         <h2
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-3xl sm:text-3xl font-extrabold tracking-tight cursor-pointer 
+          className="text-3xl sm:text-4xl font-extrabold tracking-tight cursor-pointer 
              text-gray-900 dark:text-white select-none mr-36"
         >
           Sahil<span className="text-[#ff2d55]">.</span>
@@ -100,7 +100,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             className="hidden lg:flex items-center gap-3 px-10 py-1.5 border border-gray-500 rounded-full ml-4 font-Ovo
             dark:border-white/50"
           >
-            Contact
+            Let's Talk
             <Image
               src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               alt=""
@@ -121,7 +121,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white"
+          className="flex md:hidden flex-col text-lg gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image
@@ -146,7 +146,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#skills">
+            <a className="font-Ovo" href="#skills" onClick={closeMenu}>
               Skills
             </a>
           </li>
@@ -162,7 +162,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </li>
           <li>
             <a className="font-Ovo" href="#contact" onClick={closeMenu}>
-              Contact me
+              Let's Talk
             </a>
           </li>
         </ul>

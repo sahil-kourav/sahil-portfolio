@@ -3,11 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { skills, categories } from "@/assets/assets";
 
 export default function Skills() {
-  const [active, setActive] = useState("all");
+  const [active, setActive] = useState("backend");
 
-  const filtered = skills.filter(
-    (s) => active === "all" || s.category === active
-  );
+const filtered = skills.filter((s) => s.category === active);
 
   return (
     <section id="skills" className="relative py-10 md:py-12 px-6">

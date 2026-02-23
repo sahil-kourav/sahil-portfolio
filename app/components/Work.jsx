@@ -1,6 +1,5 @@
-import { assets, workData } from "@/assets/assets";
+import { workData } from "@/assets/assets";
 import React, { useState } from "react";
-import Image from "next/image";
 import { ExternalLink, Github, ArrowUpRight, Sparkles } from "lucide-react";
 
 const Work = ({ isDarkMode }) => {

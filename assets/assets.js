@@ -5,13 +5,13 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
+import docker from "./docker.png";
+import vscode from "./vscode.png";
+import postman from "./postman.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -43,9 +43,9 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
+  docker,
   vscode,
-  firebase,
-  figma,
+  postman,
   git,
   mongodb,
   right_arrow_white,
@@ -216,39 +216,106 @@ export const infoList = [
   },
 ];
 
+
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
   assets.git,
+  assets.mongodb,
+  assets.docker,
+  assets.postman,
+  assets.vscode,
 ];
 
-export const categories = ["all", "frontend", "backend", "tools"];
+export const categories = ["backend", "ai", "cloud", "frontend"];
 
 export const skills = [
-  // Frontend
-  { name: "HTML5", level: 95, category: "frontend" },
-  { name: "CSS3", level: 95, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "JavaScript (ES6)", level: 90, category: "frontend" },
-  { name: "React JS", level: 90, category: "frontend" },
-  // UI & Animation Libraries
-  { name: "ShadCn UI", level: 85, category: "frontend" },
-  { name: "Swiper UI", level: 85, category: "frontend" },
-  { name: "Skiper UI", level: 85, category: "frontend" },
-  { name: "Material UI (MUI)", level: 80, category: "frontend" },
-  { name: "Framer Motion", level: 70, category: "frontend" },
+  // ================= BACKEND =================
+  { name: "Node.js", level: 72, category: "backend" },
+  { name: "Express.js", level: 70, category: "backend" },
+  { name: "MongoDB", level: 68, category: "backend" },
+  { name: "SQL", level: 60, category: "backend" },
+  { name: "WebSockets", level: 62, category: "backend" },
+  { name: "Redis", level: 60, category: "backend" },
+  { name: "Microservices Architecture", level: 65, category: "backend" },
+  { name: "MCP Servers", level: 50, category: "backend" },
+  { name: "Jest", level: 58, category: "backend" },
 
-  // Backend & Databases
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express.js", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "MySQL", level: 70, category: "backend" },
+  // ================= CLOUD & DEVOPS =================
+  { name: "Docker", level: 68, category: "cloud" },
+  { name: "AWS EC2", level: 65, category: "cloud" },
+  { name: "AWS ECS", level: 60, category: "cloud" },
+  { name: "AWS ECR", level: 60, category: "cloud" },
+  { name: "AWS S3", level: 65, category: "cloud" },
+  { name: "CI/CD Pipelines", level: 60, category: "cloud" },
+  { name: "DDoS Protection Basics", level: 50, category: "cloud" },
 
-  // Tools & Workflow
-  { name: "Git / GitHub", level: 90, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Postman", level: 85, category: "tools" },
+  // ================= AI & LLM =================
+
+  { name: "LLM Integration", level: 60, category: "ai" },
+  { name: "RAG", level: 55, category: "ai" },
+  { name: "LangChain", level: 55, category: "ai" },
+  { name: "LangGraph", level: 45, category: "ai" },
+  { name: "Groq AI", level: 50, category: "ai" },
+  { name: "Google Gemini", level: 55, category: "ai" },
+  { name: "Prompt Engineering", level: 65, category: "ai" },
+
+    // ================= FRONTEND =================
+  { name: "HTML5", level: 80, category: "frontend" },
+  { name: "CSS3", level: 75, category: "frontend" },
+  { name: "Tailwind CSS", level: 70, category: "frontend" },
+  { name: "JavaScript (ES6+)", level: 75, category: "frontend" },
+  { name: "React JS", level: 65, category: "frontend" },
 ];
 
+
+export const experiences = [
+  {
+    id: 1,
+    role: "MERN Stack Developer Intern",
+    company: "Affimintus Technologies",
+    location: "Indore",
+    period: "Jan 2024 - Jun 2024",
+    duration: "6 months",
+    type: "Internship",
+    description:
+      "Worked as a MERN Stack Developer Intern with primary focus on backend development. Built scalable REST APIs, implemented authentication systems, optimized database queries, and contributed to full-stack feature development using MongoDB, Express.js, React, and Node.js.",
+    achievements: [
+      "Designed and developed RESTful APIs using Node.js and Express.js for user management, product handling, and order processing.",
+      "Implemented JWT-based authentication and role-based authorization to secure application endpoints.",
+      "Integrated backend services with React frontend and ensured seamless API communication.",
+      "Collaborated with a team of developers using Git and followed clean code practices and modular architecture.",
+    ],
+    tags: ["Node.js", "Express.js", "MongoDB", "SQL", "REST APIs"],
+  },
+  {
+    id: 2,
+    role: "UI UX Designer",
+    company: "TechArk Solutions",
+    location: "Hybrid",
+    period: "Oct 2022 - Aug 2023",
+    duration: "11 months",
+    type: "Full-time",
+    description:
+      "Designed high-fidelity wireframes for 15+ websites/branded user workflows and interacting experiences",
+    achievements: [
+      "Balanced speed with upskilling to keep track of UI trend, usability standards, and workflows.",
+      "Led redesign of core product features improving user engagement by 35%",
+    ],
+    tags: ["UI Design", "Wireframing", "User Testing", "Figma"],
+  },
+  {
+    id: 3,
+    role: "Junior Designer",
+    company: "Devtrust Pvt. Ltd",
+    location: "On-site",
+    period: "May 2020 - Apr 2021",
+    duration: "1 year",
+    type: "Internship",
+    description:
+      "Successfully managed two internship roles, mastering graphic and user creating unique Design Systems and visually appealing mockups.",
+    achievements: [
+      "Created 50+ marketing materials and brand assets",
+      "Contributed to 3 major product launches",
+    ],
+    tags: ["Visual Design", "Branding", "Illustration", "Adobe Suite"],
+  },
+];
