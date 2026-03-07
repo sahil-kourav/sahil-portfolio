@@ -109,39 +109,6 @@ export const workData = [
     demoUrl: "https://demo.example.com/taskapp",
     githubUrl: "https://github.com/yourusername/task-manager",
   },
-  {
-    id: 4,
-    title: "UI/UX Design Dashboard",
-    description:
-      "A modern SaaS admin UI built with Figma-inspired design principles, clean typography, and responsive layouts.",
-    image:
-      "https://speckyboy.com/wp-content/uploads/2022/07/admin-dashboard-ui-ux-web-design-inspiration-05.jpg",
-    tags: ["Figma", "Next.js", "Tailwind CSS", "Vercel"],
-    demoUrl: "https://demo.example.com/design-dashboard",
-    githubUrl: "https://github.com/yourusername/uiux-dashboard",
-  },
-  {
-    id: 5,
-    title: "Travel Booking Web App",
-    description:
-      "A fully responsive travel booking app featuring dynamic search, map integration, and user-friendly booking flow.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJl3uP3Iymp4Xm6cC8oiJpRtXykDQBWN0Rw&s",
-    tags: ["React", "Firebase", "Tailwind", "API Integration"],
-    demoUrl: "https://demo.example.com/travel-app",
-    githubUrl: "https://github.com/yourusername/travel-booking",
-  },
-  {
-    id: 6,
-    title: "Food Ordering System",
-    description:
-      "A digital restaurant system allowing menu browsing, online orders, and live kitchen updates — built with the MERN stack.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmawGnsW7raDWFwLFtcLv0LBA6oOvKuocFlA&s",
-    tags: ["MongoDB", "Express.js", "React", "Node.js"],
-    demoUrl: "https://demo.example.com/restaurant",
-    githubUrl: "https://github.com/yourusername/restaurant-app",
-  },
 ];
 
 export const serviceData = [
@@ -152,45 +119,33 @@ export const serviceData = [
     link: "",
   },
   {
-    title: "API Development",
+    title: "Database Design & Optimization",
     description:
-      "Create backend APIs to connect React frontends with databases and services.",
+      "Design efficient database schemas, manage data operations using MongoDB and SQL, and optimize queries for performance and scalability.",
     link: "",
   },
   {
-    title: "Database Management",
+    title: "Microservices & Backend Integration",
     description:
-      "Handle application data using MongoDB, including data storage and retrieval.",
+    "Develop modular backend services and integrate third-party APIs, payment gateways, and cloud services into scalable applications.",
     link: "",
   },
   {
-    title: "User Management Systems",
+    title: "Backend Deployment",
     description:
-      "Build backend systems for user registration, login, and profile management.",
+      "Deployed backend applications on platforms like AWS EC2 and Render, managed environment variables, and handled basic server configuration.",
     link: "",
   },
   {
-    title: "Backend Deployment & Hosting",
+    title: "Cloud Deployment & Containerization",
     description:
-      "Deploy MERN backend servers and manage environment configurations.",
+    "Deploy backend applications using Docker and manage cloud infrastructure on AWS (EC2, ECS, S3) and other hosting platforms.",
     link: "",
   },
   {
-    title: "Backend Integrations",
+    title: "AI Service Integration",
     description:
-      "Integrate backend services with third-party tools like email and cloud services.",
-    link: "",
-  },
-  {
-    title: "Cloud Backend Deployment",
-    description:
-      "Deploy and manage backend applications on cloud platforms like Render and AWS.",
-    link: "",
-  },
-  {
-    title: "Backend Maintenance & Updates",
-    description:
-      "Maintain backend systems, fix bugs, and update APIs to support application growth.",
+      "Worked on integrating AI services such as Google Gemini into backend applications to implement AI-driven features like intelligent responses and dynamic content processing.",
     link: "",
   },
 ];
@@ -281,41 +236,7 @@ export const experiences = [
     achievements: [
       "Designed and developed RESTful APIs using Node.js and Express.js for user management, product handling, and order processing.",
       "Implemented JWT-based authentication and role-based authorization to secure application endpoints.",
-      "Integrated backend services with React frontend and ensured seamless API communication.",
-      "Collaborated with a team of developers using Git and followed clean code practices and modular architecture.",
     ],
     tags: ["Node.js", "Express.js", "MongoDB", "SQL", "REST APIs"],
-  },
-  {
-    id: 2,
-    role: "UI UX Designer",
-    company: "TechArk Solutions",
-    location: "Hybrid",
-    period: "Oct 2022 - Aug 2023",
-    duration: "11 months",
-    type: "Full-time",
-    description:
-      "Designed high-fidelity wireframes for 15+ websites/branded user workflows and interacting experiences",
-    achievements: [
-      "Balanced speed with upskilling to keep track of UI trend, usability standards, and workflows.",
-      "Led redesign of core product features improving user engagement by 35%",
-    ],
-    tags: ["UI Design", "Wireframing", "User Testing", "Figma"],
-  },
-  {
-    id: 3,
-    role: "Junior Designer",
-    company: "Devtrust Pvt. Ltd",
-    location: "On-site",
-    period: "May 2020 - Apr 2021",
-    duration: "1 year",
-    type: "Internship",
-    description:
-      "Successfully managed two internship roles, mastering graphic and user creating unique Design Systems and visually appealing mockups.",
-    achievements: [
-      "Created 50+ marketing materials and brand assets",
-      "Contributed to 3 major product launches",
-    ],
-    tags: ["Visual Design", "Branding", "Illustration", "Adobe Suite"],
   },
 ];

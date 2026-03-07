@@ -16,7 +16,7 @@ const filtered = skills.filter((s) => s.category === active);
           <p className="text-xs mb-4 tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
             What I Know
           </p>
-          <h2 className="text-5xl font-Ovo text-gray-900 dark:text-white">
+          <h2 className="text-5xl font-Ovo font-semibold text-gray-900 dark:text-white">
             Skills & Tools
           </h2>
           <p className="text-center max-w-2xl mx-auto mt-5 font-Ovo leading-6 text-gray-700 dark:text-gray-300">
@@ -26,7 +26,7 @@ const filtered = skills.filter((s) => s.category === active);
         </div>
 
         {/* Category Tabs */}
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-10">
           <div className="flex gap-0 md:gap-2 lg:gap-2 p-2 rounded-full border border-neutral-300 dark:border-neutral-600 bg-white/70 dark:bg-neutral-900/10 backdrop-blur">
             {categories.map((cat) => (
               <button

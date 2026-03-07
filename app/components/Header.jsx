@@ -107,7 +107,7 @@ const Header = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-5 pt-4">
           <a
             href="#contact"
-            className="px-20 md:px-14 py-2 rounded-full bg-gray-800 text-white flex items-center gap-3"
+            className="px-24 md:px-14 py-2 rounded-full bg-gray-800 text-white flex items-center gap-2"
           >
             Contact Me
             <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
@@ -116,7 +116,7 @@ const Header = () => {
           <a
             href="/sample-resume.pdf"
             download
-            className="px-20 md:px-14 py-2 rounded-full border border-gray-500 bg-white dark:text-black flex items-center gap-2"
+            className="px-24 md:px-14 py-2 rounded-full border border-gray-500 bg-white dark:text-black flex items-center gap-2"
           >
             My Resume
             <Image src={assets.download_icon} alt="download" className="w-4" />
@@ -124,7 +124,7 @@ const Header = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 text-2xl pt-4">
+        <div className="flex justify-center gap-8 text-2xl pt-4">
           {socials.map(({ Icon, label, href }) => (
             <motion.a
               key={label}
@@ -135,7 +135,7 @@ const Header = () => {
               variants={glowVariants}
               initial="initial"
               whileHover="hover"
-              whileTap="tap"
+              // whileTap="tap"
               className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
             >
               <Icon />

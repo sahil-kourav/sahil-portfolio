@@ -19,7 +19,7 @@ const Work = ({ isDarkMode }) => {
       <div className="relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h4 className="mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400 font-medium">
+          <h4 className="inline-block text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
             My Projects
           </h4>
           <h2 className="text-5xl font-Ovo font-semibold text-gray-800 dark:text-white mb-4">

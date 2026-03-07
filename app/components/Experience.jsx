@@ -19,10 +19,10 @@ export default function ProfessionalJourney({ isDarkMode }) {
     >
       {/* Header */}
       <div className="text-center mb-16">
-        <span className="inline-block mb-4 text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
+        <span className="inline-block mb-2 text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
           Where I’ve Worked
         </span>
-        <h2 className="text-5xl font-Ovo text-gray-900 dark:text-white">
+        <h2 className="text-5xl font-Ovo font-semibold text-gray-800 dark:text-white">
           My Experience
         </h2>
         <p className="max-w-2xl mx-auto mt-5 font-Ovo leading-6 text-gray-700 dark:text-gray-300">

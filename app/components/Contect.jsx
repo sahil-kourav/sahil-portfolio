@@ -95,12 +95,12 @@ const Contact = () => {
         <div
           className="text-center mb-16"
         >
-          <h4 className="mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400 font-medium">
-            Connect with me
+          <h4 className="inline-block text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
+            Let's Connect
           </h4>
 
-          <h2 className="text-5xl font-Ovo text-gray-800 dark:text-white mb-6">
-            Get in touch
+          <h2 className="text-5xl font-Ovo font-semibold text-gray-800 dark:text-white mb-4">
+            Get in Touch
           </h2>
 
           <p className="max-w-2xl mx-auto font-Ovo leading-relaxed text-gray-700 dark:text-gray-300">
@@ -177,13 +177,13 @@ const Contact = () => {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div          >
-            <form onSubmit={onSubmit} className="space-y-6">
+          <div>
+            <form onSubmit={onSubmit} className="space-y-5">
               {/* Name and Email Grid */}
               <div className="grid sm:grid-cols-2 gap-6">
                 <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Name 
+                  <label className="text-lg font-Ovo text-gray-800 dark:text-white">
+                    Name
                   </label>
                   <input
                     type="text"
@@ -200,7 +200,7 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  <label className="text-lg font-Ovo text-gray-800 dark:text-white">
                     Email
                   </label>
                   <input
@@ -220,7 +220,7 @@ const Contact = () => {
 
               {/* Subject */}
               <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label className="text-lg font-Ovo text-gray-800 dark:text-white">
                   Subject
                 </label>
                 <input
@@ -239,11 +239,11 @@ const Contact = () => {
 
               {/* Message */}
               <motion.div whileFocus={{ scale: 1.01 }} className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label className="text-lg font-Ovo text-gray-800 dark:text-white">
                   Message
                 </label>
                 <textarea
-                  rows="6"
+                  rows="4"
                   name="message"
                   placeholder="Enter your message here..."
                   required
@@ -262,7 +262,7 @@ const Contact = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-3 px-6 flex items-center justify-center gap-3
+                className={`w-full py-2 px-6 flex items-center justify-center gap-3
                          bg-gradient-to-r from-blue-600 to-purple-600
                          text-white font-semibold rounded-xl
                          hover:from-blue-700 hover:to-purple-700
