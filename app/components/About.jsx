@@ -45,13 +45,6 @@ const About = ({ isDarkMode }) => {
       id="about"
       className="w-full relative py-16 md:py-20 px-[7%] md:px-[10%] lg:px-[10%] overflow-hidden"
     >
-      {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-50/20 to-transparent dark:via-blue-950/10 pointer-events-none" />
-      
-      {/* Decorative blur elements */}
-      <div className="absolute top-1/4 -left-32 w-80 h-80 bg-blue-400/10 dark:bg-blue-600/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-purple-400/10 dark:bg-purple-600/5 rounded-full blur-3xl" />
-
       <div
         className="relative z-10"
       >

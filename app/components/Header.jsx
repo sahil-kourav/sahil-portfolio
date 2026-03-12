@@ -1,25 +1,8 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { assets } from "@/assets/assets";
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-/* ------------------ Motion Variants ------------------ */
-const glowVariants = {
-  initial: {
-    scale: 1,
-    y: 0,
-    filter: "drop-shadow(0 0 0 rgba(0,0,0,0))",
-  },
-  hover: {
-    scale: 1.1,
-    y: -3,
-    filter:
-      "drop-shadow(0 0 8px rgba(34,197,94,0.4)) drop-shadow(0 0 16px rgba(34,197,94,0.2))",
-    transition: { type: "spring", stiffness: 260, damping: 18 },
-  },
-  tap: { scale: 0.95 },
-};
 
 const roles = [
   "Backend Developer",
@@ -28,12 +11,6 @@ const roles = [
   "Full Stack Developer",
 ];
 
-const socials = [
-  { Icon: FaXTwitter, label: "X", href: "https://x.com/sahilkourav_" },
-  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sahilkourav" },
-  { Icon: FaGithub, label: "GitHub", href: "https://github.com/sahil-kourav" },
-  { Icon: FaInstagram, label: "Instagram", href: "https://instagram.com/sahilkourav_",},
-];
 
 const Header = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -66,7 +43,6 @@ const Header = () => {
 
   return (
     <section className="relative w-full py-24 md:py-24 px-[5%] lg:px-[10%] overflow-hidden">
-      
       {/* Background Blobs */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-green-500/5 rounded-full blur-3xl" />
@@ -74,7 +50,6 @@ const Header = () => {
       </div>
 
       <div className="max-w-2xl mt-5 mx-auto text-center space-y-8">
-        
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700">
           <span className="w-2 h-2 bg-gray-700 dark:bg-gray-300 rounded-full animate-pulse" />
@@ -98,9 +73,9 @@ const Header = () => {
 
         {/* Description */}
         <p className="text-md md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          I build robust server-side applications and REST APIs using
-          Node.js, Express, and MongoDB. Focused on scalable architecture,
-          clean code, and efficient database design.
+          I build robust server-side applications and REST APIs using Node.js,
+          Express, and MongoDB. Focused on scalable architecture, clean code,
+          and efficient database design.
         </p>
 
         {/* CTA Buttons */}
@@ -123,25 +98,46 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-8 text-2xl pt-4">
-          {socials.map(({ Icon, label, href }) => (
-            <motion.a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-              variants={glowVariants}
-              initial="initial"
-              whileHover="hover"
-              // whileTap="tap"
-              className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+        {/* Modern Scroll Indicator */}
+        <motion.div
+          onClick={() =>
+            document
+              .querySelector("#about")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="flex flex-col items-center pt-8 cursor-pointer select-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+          <span className="text-xs tracking-widest uppercase text-gray-500 dark:text-gray-400 mb-3">
+            Scroll
+          </span>
+
+          <motion.div
+            animate={{ y: [0, 12, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+            className="flex flex-col items-center"
+          >
+            <div className="w-[1px] h-6 bg-gradient-to-b from-gray-400 to-transparent" />
+
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="text-gray-500 dark:text-gray-400"
             >
-              <Icon />
-            </motion.a>
-          ))}
-        </div>
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

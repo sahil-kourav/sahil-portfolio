@@ -178,17 +178,17 @@ const Contact = () => {
 
           {/* Right Side - Contact Form */}
           <div>
+          
             <form onSubmit={onSubmit} className="space-y-5">
-              {/* Name and Email Grid */}
-              <div className="grid sm:grid-cols-2 gap-6">
-                <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                  <label className="text-lg font-Ovo text-gray-800 dark:text-white">
-                    Name
-                  </label>
+              <p className="text-lg font-Ovo text-gray-800 dark:text-white mb-6">
+                Let's connect! Submit your details below.
+              </p>
+              <div className="grid pt-2 sm:grid-cols-2 gap-6">
+                <motion.div whileFocus={{ scale: 1.02 }}>
                   <input
                     type="text"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Enter your name here..."
                     required
                     className="w-full p-3.5 outline-none border border-gray-400 dark:border-gray-700
                              rounded-xl bg-white dark:bg-gray-900/50
@@ -199,14 +199,11 @@ const Contact = () => {
                   />
                 </motion.div>
 
-                <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                  <label className="text-lg font-Ovo text-gray-800 dark:text-white">
-                    Email
-                  </label>
+                <motion.div whileFocus={{ scale: 1.02 }}>
                   <input
                     type="email"
                     name="email"
-                    placeholder="john@example.com"
+                    placeholder="Enter your email here..."
                     required
                     className="w-full p-3.5 outline-none border border-gray-400 dark:border-gray-700
                              rounded-xl bg-white dark:bg-gray-900/50
@@ -219,10 +216,7 @@ const Contact = () => {
               </div>
 
               {/* Subject */}
-              <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
-                <label className="text-lg font-Ovo text-gray-800 dark:text-white">
-                  Subject
-                </label>
+              <motion.div whileFocus={{ scale: 1.02 }}>
                 <input
                   type="text"
                   name="subject"
@@ -238,10 +232,7 @@ const Contact = () => {
               </motion.div>
 
               {/* Message */}
-              <motion.div whileFocus={{ scale: 1.01 }} className="space-y-2">
-                <label className="text-lg font-Ovo text-gray-800 dark:text-white">
-                  Message
-                </label>
+              <motion.div whileFocus={{ scale: 1.01 }}>
                 <textarea
                   rows="4"
                   name="message"

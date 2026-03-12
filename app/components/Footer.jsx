@@ -76,8 +76,7 @@ const Footer = () => {
           </h2>
 
           <p className="max-w-sm text-md leading-relaxed text-gray-600 dark:text-gray-400">
-            Backend developer building scalable systems with clean code and
-            thoughtful architecture.
+            Backend developer crafting scalable, reliable solutions with clean code and smart architecture.
           </p>
 
           <div className="flex items-center gap-4">
